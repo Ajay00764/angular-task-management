@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ajay Kharat",
+      "email": "ajay.kharat@antllp.com",
+      "phone": 8857822354,
+      "gender": "male",
+      "role": "Angular developer",
+      "password": "Ajay@123"
+    },
+    {
+      "id": "2",
+      "name": "Subodh",
+      "email": "Subodh@gmail.com",
+      "phone": 8390070112,
+      "gender": "male",
+      "role": "Angular Developer",
+      "password": "Subodh@123"
+    }
+  ]
+}
