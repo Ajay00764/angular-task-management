@@ -17,9 +17,7 @@ export class UsersComponent {
   displayedColumns: string[] = [
     'id',
     'name',
-    'email',
-    'phone',
-    'gender',
+    'contactNumber',
     'role',
     'action'
   ];
@@ -73,7 +71,7 @@ export class UsersComponent {
   deleteUser(id: number) {
     this.service.deleteUser(id).subscribe({
       next: (res: any) => {
-        this.toastr.success("Hotel Deleted !!");
+        this.toastr.success("Member Deleted !!");
         this.getUserList();
       },
       error: console.log,

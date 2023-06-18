@@ -24,11 +24,8 @@ export class UserFormComponent {
     this.hotelForm = this.builder.group({
       id: '',
       name: '',
-      email: '',
-      phone: '',
-      gender: '',
       role : '',
-      password: ''
+      contactNumber: '',
     })
   }
 
@@ -41,7 +38,7 @@ export class UserFormComponent {
       if (this.data) {
         this.service.updateUser(this.data.id, this.hotelForm.value).subscribe({
           next: (val: any) => {
-            this.toastr.success('Hotel Detail Updated Successfully !!');
+            this.toastr.success('User Updated Successfully !!');
             this.dialog.close(true);
 
           },
@@ -53,7 +50,7 @@ export class UserFormComponent {
         console.log(this.hotelForm.value)
         this.service.addUser(this.hotelForm.value).subscribe({
           next: (val: any) => {
-            this.toastr.success('Hotel Registration Successfull', "Congratulations!!");
+            this.toastr.success('User Registered Successfully', "Congratulations!!");
             this.dialog.close(true);
 
           },

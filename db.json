@@ -3,20 +3,26 @@
     {
       "id": 1,
       "name": "Ajay Kharat",
-      "email": "ajay.kharat@antllp.com",
-      "phone": 8857822354,
-      "gender": "male",
       "role": "Angular developer",
-      "password": "Ajay@123"
+      "contactNumber": 8857822354
     },
     {
       "id": "2",
       "name": "Subodh",
-      "email": "Subodh@gmail.com",
-      "phone": 8390070112,
-      "gender": "male",
       "role": "Angular Developer",
-      "password": "Subodh@123"
+      "contactNumber": 8390070112
+    },
+    {
+      "id": "3",
+      "name": "kapil",
+      "role": "hfhfhf",
+      "contactNumber": 43535
+    },
+    {
+      "id": "4",
+      "name": "pratik",
+      "role": "hfhfhfh",
+      "contactNumber": 1233424255
     }
   ]
 }

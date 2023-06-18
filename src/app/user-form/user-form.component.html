@@ -1,50 +1,34 @@
 <div mat-dialog-title>
-    <h1>Owner Update Form</h1>
+    <h1>Members Update Form</h1>
 </div>
 <form [formGroup]="hotelForm" [style.width]="'100%'" (ngSubmit)="hotelRegistr()">
     <div mat-dialog-content class="content">
         <div class="row">
             <mat-form-field appearance="outline">
-                <mat-label>Owner ID</mat-label>
-                <input matInput placeholder="Ex. Dal Tadka" formControlName="id">
+                <mat-label>Members ID</mat-label>
+                <input matInput placeholder="Ex. 1" formControlName="id">
             </mat-form-field>
         </div>
         <div class="row">
             <mat-form-field appearance="outline">
-                <mat-label>Owner Name</mat-label>
+                <mat-label>Members Name</mat-label>
                 <input matInput placeholder="Ex. Taj hotel" formControlName="name">
             </mat-form-field>
         </div>
+        
         <div class="row">
             <mat-form-field appearance="outline">
-                <mat-label>Owner Email</mat-label>
-                <input matInput type="email" placeholder="Ex. ajay@gmail.com" formControlName="email">
-            </mat-form-field>
-        </div>
-        <div class="row">
-            <mat-form-field appearance="outline">
-                <mat-label>Owner Phone</mat-label>
-                <input matInput type="number" placeholder="Ex. 8857822354" formControlName="phone">
-            </mat-form-field>
-        </div>
-        <div class="row">
-            <mat-form-field appearance="outline">
-                <mat-label>Owner Role</mat-label>
+                <mat-label>Members Role</mat-label>
                 <input matInput type="text" placeholder="Ex. Angular Developer" formControlName="role">
             </mat-form-field>
         </div>
         <div class="row">
             <mat-form-field appearance="outline">
-                <mat-label>Password</mat-label>
-                <input matInput  placeholder="Ex. Tanay@123" formControlName="password">
+                <mat-label>Contact Numbers</mat-label>
+                <input matInput type="number" placeholder="Ex. 8857822354" formControlName="contactNumber">
             </mat-form-field>
         </div>
-        <div class="row">
-            <mat-radio-group aria-label="Select Gender" formControlName="gender">
-                <mat-radio-button value="male">Male</mat-radio-button>
-                <mat-radio-button value="female">Female</mat-radio-button>
-              </mat-radio-group>
-        </div>
+        
         
     </div>
     <div mat-dialog-actions class="action">
